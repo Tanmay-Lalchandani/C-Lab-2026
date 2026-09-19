@@ -2,12 +2,14 @@
 
 int main() {
     int n;
-    printf("Enter a number:\n");
+    printf("Enter a non-negative number:\n");
     scanf("%d", &n);
-    int mult=n;
-    for(int i =n-1; i>=1; i--) {
-        mult=mult*i;
+
+    int mult = 1;
+    for (int i = n; i >= 1; i--) {
+        mult = mult * i;
     }
-    printf("Value of %d! is %d.", n, mult);
+
+    printf("Value of %d! is %d.\n", n, mult);
     return 0;
 }

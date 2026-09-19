@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <math.h>
+
 
 int main() {
-    /*Armstrong number: 153= 1^3 + 5^3 + 3^3 = 1+125+27= 153*/
+    
     int i, n, sum=0, dig, m, rem, t;
     printf("Enter any number:\n");
     scanf("%d", &n);
@@ -18,18 +18,26 @@ int main() {
     for(i=1; i<=dig; i++) {
         rem=m%10;
         m=m/10;
-        sum=sum+pow(rem, dig);
+        sum=sum+rem;
         printf("Digit %d: %d.\n", i, rem);
+        if(i<=dig-1) {
+        sum=sum*10;
+        }
+        else{
+            break;
+        }
+        
     }
+    printf("The reverse of %d is %d.\n", t, sum);
     if(t==0) {
-        printf("0 is an armstrong.\n");
+        printf("0 is a palindrome.\n");
     }
     else {
     if(sum==t) {
-        printf("%d is an armstrong.\n", t);
+        printf("%d is a palindrome.\n", t);
     }
     else {
-        printf("%d is not an armstrong.\n", t);
+        printf("%d is not a palindrome.\n", t);
     }
 }
     return 0;

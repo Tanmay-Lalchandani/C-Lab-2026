@@ -26,7 +26,7 @@ int main() {
         printf("0 is an armstrong.\n");
     }
     else {
-    if(sum==t) {
+    if(sum=t) {
         printf("%d is an armstrong.\n", t);
     }
     else {

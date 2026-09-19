@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include <stdio.h
 
 int main() {
     int n, i, num;
     int max, secondMax;
 
-    printf("Enter the value of n: ");
+    printf("Enter the value of n:\n");
     scanf("%d", &n);
 
     printf("Enter %d numbers:\n", n);

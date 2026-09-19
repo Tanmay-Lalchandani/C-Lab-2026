@@ -3,11 +3,11 @@
 int main() {
     int n, sum, digit;
 
-    printf("Enter a number: ");
+    printf("Enter a number:\n");
     scanf("%d", &n);
 
     if (n < 0) {
-        n = -n; // handle negative numbers
+        n = -n; 
     }
 
     while (n >= 10) {

@@ -6,7 +6,7 @@ int main() {
     printf("Enter the number of terms in fibonacci series: ");
     scanf("%d", &n);
 
-    printf("Fibonacci Series: ");
+    printf("Fibonacci Series:\n");
 
     if (n >= 1) {
         printf("%d, ", prev);

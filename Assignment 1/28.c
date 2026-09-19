@@ -18,6 +18,7 @@ int main() {
         rem=m%10;
         m=m/10;
         printf("The digits are %d.\n", rem);
+        helloooo
     }
     return 0;
 }

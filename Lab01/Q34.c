@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, prev = 0, curr = 1, next;
+    int n, i, prev2 = 0, prev1 = 1, next;
 
     printf("Enter the number of terms in fibonacci series: ");
     scanf("%d", &n);
@@ -9,20 +9,17 @@ int main() {
     printf("Fibonacci Series:\n");
 
     if (n >= 1) {
-        printf("%d, ", prev);
+        printf("%d ", prev2);
     }
     if (n >= 2) {
-        printf("%d, ", curr);
+        printf("%d ", prev1);
     }
 
     for (i = 3; i <= n; i++) {
-        next = prev + curr;
-        printf("%d", next);
-        if (i != n) {
-            printf(", ");
-        }
-        prev = curr;
-        curr = next;
+        next = prev1 + prev2;
+        printf("%d ", next);
+        prev2 = prev1;
+        prev1 = next;
     }
 
     return 0;

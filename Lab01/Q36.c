@@ -7,10 +7,7 @@ int main() {
     scanf("%d", &n);
 
     for (i = 1; i <= n; i = i + 2) {
-        printf("%d", i);
-        if (i + 2 <= n) {
-            printf(", ");
-        }
+        printf("%d ", i);
     }
     
     return 0;

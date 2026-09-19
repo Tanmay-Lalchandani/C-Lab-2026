@@ -5,7 +5,9 @@ int main() {
     printf("Enter 2 numbers A and B\n");
     scanf("%d", &a);
     scanf("%d", &b);
-
-    printf("The swapped number now are A=%d and B=%d", b, a);
+    a = a + b;  
+    b = a - b;  
+    a = a - b;
+    printf("The swapped number now are A=%d and B=%d", a, b);
     return 0;
 }

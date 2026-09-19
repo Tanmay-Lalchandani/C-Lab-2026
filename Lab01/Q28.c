@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h
+#include <math.h>
 
 int main() {
     /*Armstrong number: 153= 1^3 + 5^3 + 3^3 = 1+125+27= 153*/
@@ -21,12 +21,13 @@ int main() {
         sum=sum+pow(rem, dig);
         printf("Digit %d: %d.\n", i, rem);
     }
+    printf("Sum = %d\n", sum);
     
     if(t==0) {
         printf("0 is an armstrong.\n");
     }
     else {
-    if(sum=t) {
+    if(sum==t) {
         printf("%d is an armstrong.\n", t);
     }
     else {

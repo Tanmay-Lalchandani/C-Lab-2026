@@ -17,8 +17,9 @@ int main() {
     printf("Number of digits in %d is %d.\n", m, dig);
     for(i=1; i<=dig; i++) {
         rem=m%10;
+        
+        sum=sum+(int)round(pow(rem, dig));
         m=m/10;
-        sum=sum+pow(rem, dig);
         printf("Digit %d: %d.\n", i, rem);
     }
     printf("Sum = %d\n", sum);

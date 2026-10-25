@@ -1,0 +1,46 @@
+#include <stdio.h>
+void palindrome(int n) {
+    int m, t, dig, sum=0, i, rem;
+    
+    m=t=n;
+    if(n==0) {
+        dig = 1;
+    }
+    else {for(dig=0; n!=0 ; dig++) {
+        n=n/10;
+    }
+}
+    for(i=1; i<=dig; i++) {
+        rem=m%10;
+        m=m/10;
+        sum=sum+rem;
+        if(i<=dig-1) {
+        sum=sum*10;
+        }
+        else{
+            break;
+        }
+        
+    }
+    printf("The reverse of %d is %d.\n", t, sum);
+    if(t==0) {
+        printf("0 is a palindrome.\n");
+    }
+    else {
+    if(sum==t) {
+        printf("%d is a palindrome.\n", t);
+    }
+    else {
+        printf("%d is not a palindrome.\n", t);
+    }
+}
+}
+
+int main() {
+    int a;
+    printf("Enter any number:\n");
+    scanf("%d", &a);
+    palindrome(a);
+    
+    return 0;
+}

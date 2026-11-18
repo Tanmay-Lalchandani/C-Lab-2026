@@ -2,11 +2,11 @@
 #include<string.h>
 
 int main() {
-    char c[20];
-    printf("\nEnter String:-> ");
+    char c[50];
+    printf("\nEnter String: ");
     scanf("%s", c);
 
     int length=strlen(c);
-    printf("\nLENGTH : %d", length);
+    printf("\nLength of string is %d.", length);
     return 0;
 }

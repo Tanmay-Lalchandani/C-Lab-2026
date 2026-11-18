@@ -2,18 +2,18 @@
 
 int main() {
     char s1[20],s2[20];
-    printf("\nEnter Two Strings:-> ");
-    scanf("%s %s", s1,s2);
-    int i=0;
+    printf("\nEnter two Strings: ");
+    scanf("%s%s", s1, s2);
+    int i;
 
     while(s1[i]!='\0' || s2[i]!='\0') {
         if(s1[i]!=s2[i]) {
-            printf("\nBOTH STRINGS ARE NOT SAME.");
+            printf("\nBoth strings are not same.");
             return 0;
         }
         i++;
     }
     
-    printf("\nBOTH STRINGS ARE SAME.");
+    printf("\nBoth strings are same.");
     return 0;
 }

@@ -25,6 +25,6 @@ int main() {
         str[length-i-1]= temp;
     }
     
-    printf("\nReversed string: %s", str);
+    printf("\nReversed string : %s", str);
     return 0;
 }

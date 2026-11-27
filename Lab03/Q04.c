@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int i, a[10], min, temp, x, j, n;
+    int i, min, temp, x, j, n;
     printf("How many integers?\n");
     scanf("%d", &n);
     int a[n];    

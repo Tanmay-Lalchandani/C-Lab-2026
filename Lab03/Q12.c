@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main() {
-    int i, j, a[3][3], b[3][3], c[3][3];
+int main() {    int i, j, k, a[3][3], b[3][3], c[3][3];
     printf("Enter 9 numbers to form a 3x3 matrix:\n");
     for(i=0; i<3; i++) {
         for(j=0; j<3; j++) {
@@ -32,10 +31,14 @@ int main() {
     }
     for(i=0; i<3; i++) {
         for(j=0; j<3; j++) {
-            c[i][j]=b[i][j] * a[i][j];
+            c[i][j]=0;
+            for(k=0; k<3; k++) {
+                c[i][j]= c[i][j] + (a[i][k] * b[k][j]);
+            }
+            
         }
     }
-    printf("Multiplication of the 2 arrays is:\n");
+    printf("Matrix Multiplication of the 2 arrays is:\n");
     
     for(i=0; i<3; i++) {
         for(j=0; j<3; j++) {

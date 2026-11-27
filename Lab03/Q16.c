@@ -6,7 +6,8 @@ void palindrome(int n) {
     if(n==0) {
         dig = 1;
     }
-    else {for(dig=0; n!=0 ; dig++) {
+    else {
+    for(dig=0; n!=0 ; dig++) {
         n=n/10;
     }
 }
